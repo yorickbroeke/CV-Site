@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Experience</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<div class="bannerborder">
+			<div class="banner">
+				<a href="cv_skills_interests.html" class="bannertext slideOn fade">Skills and Interests</a>
+				<a href="cv_about_me.html" class="bannertext slideOn fade">Personal Information</a>
+				<a href="cv_experience.html" class="bannertext slideOn fade">Experience</a>
+				
+				<a class="prev" onclick="slideCount(-1)">&#10094;</a>
+				<a class="next" onclick="slideCount(1)">&#10095;</a>
+			</div>
+		</div>
+		
+		<div id="descriptions">
+			<div class="explain">
+				<img src="./images/colourbar background.jpg" class="explainImage">
+				<h1 class="explainHeader">Lorem Ipsum</h1>
+				<p class="explainText">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius elit nec augue pellentesque congue ut eget magna. Fusce non nisi eget purus aliquam finibus id at augue. Proin ultricies varius pretium. Praesent ut quam elementum, vestibulum enim id, iaculis dolor. Sed dapibus, tellus nec laoreet ornare, nulla nisl venenatis nisl, fringilla luctus dui urna vitae sapien. Vestibulum sed dapibus urna. Vestibulum venenatis et turpis id auctor. Aenean enim turpis, placerat a elementum sit amet, gravida a elit. Aliquam semper sit amet metus a vulputate. Ut in imperdiet ipsum, ut pulvinar ipsum. Duis pulvinar quam eget tempor feugiat. Donec quis erat quis enim egestas rutrum ac et urna. Aenean nulla mauris, ultricies non fringilla nec, scelerisque ut leo. Morbi pharetra ex eu consectetur blandit.<br><br>
+
+Sed at rhoncus libero. Nam viverra enim euismod cursus auctor. Integer elit nisl, fermentum at leo vel, euismod facilisis purus. Integer condimentum, dui at suscipit auctor, lacus neque porttitor lectus, id suscipit nulla augue nec sapien. Pellentesque accumsan luctus posuere. Quisque nec nisl massa. Curabitur lacinia malesuada pellentesque. Cras gravida varius vestibulum. Suspendisse tincidunt elit et auctor hendrerit. Nunc ac sodales mauris.<br><br>
+
+Donec et cursus augue. Aliquam finibus nulla faucibus efficitur sagittis. Fusce hendrerit est orci, sed fermentum nibh ultricies eu. Suspendisse vitae ornare magna. Nunc ante risus, porttitor non est et, vehicula tristique mi. Integer sed felis nec purus maximus facilisis. Quisque viverra finibus orci, quis tincidunt ipsum commodo eu.<br><br>
+
+Nunc pretium, enim id ultricies volutpat, ipsum turpis lobortis tellus, elementum ullamcorper lorem massa ac felis. Integer et feugiat lectus. Sed vitae viverra libero. Pellentesque at vulputate urna, quis facilisis risus. Mauris non justo dui. Morbi eget justo tristique, vehicula lorem id, semper ipsum. Quisque ullamcorper sem vel nunc commodo aliquet. Donec vitae sapien viverra, feugiat turpis quis, vestibulum nunc. In hac habitasse platea dictumst. Fusce viverra orci nisi.<br><br>
+
+Integer dictum orci lorem, a consectetur mi varius non. Praesent eu metus eros. In porta ac tortor id convallis. Praesent porta sollicitudin vulputate. Integer eu euismod augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Morbi ullamcorper nulla vitae accumsan dignissim. In et ornare sapien, mollis convallis mi. Nullam eu vehicula orci. Sed ullamcorper est non hendrerit dignissim. Vivamus vel dictum libero.</p>
+			
+				<div class="explain"><p>Mofo</p></div>
+				<div class="explain"><p>Mofo</p></div>
+			
+			</div>
+		</div>
+		<div id="footer">
+		</div>
+		
+		<script>
+			
+			function tileToggle(x){
+				var i;
+				var tileCount = document.getElementsByClassName("explain");
+				for (i = 0; i < tileCount.length; i++) {
+					tileCount[i].style.display = "none";  
+				}
+				
+				
+				tileCount[x-1].style.display = "inline-block";  
+			}
+			
+			var slideIndex = 2;
+			showSlides(slideIndex);
+
+			function slideCount(n) {
+			  showSlides(slideIndex += n);
+			}
+
+
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("slideOn");
+				if (n > slides.length) {
+					slideIndex = 1;
+				}   
+				
+				if (n < 1) {
+					slideIndex = slides.length;
+				}
+				
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				
+				
+				slides[slideIndex-1].style.display = "block";  
+			}
+		</script>
+	</body>
+</html>
