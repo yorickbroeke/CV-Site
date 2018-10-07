@@ -115,48 +115,9 @@
 				</p>
 			</div>
 		</div>
-		
+
+		<script src="scripts/tools.js"></script>
 		<script>
-			
-			function itemToggle(x){
-				var i;
-				var itemCount = document.getElementsByClassName("explain");
-				for (i = 0; i < itemCount.length; i++) {
-					itemCount[i].style.display = "none";  
-				}
-				
-				
-				itemCount[x-1].style.display = "inline-block";  
-			}
-			
-			var slideIndex = 3;
-			showSlides(slideIndex);
-
-			function slideCount(n) {
-			  showSlides(slideIndex += n);
-			}
-
-
-
-			function showSlides(n) {
-				var i;
-				var slides = document.getElementsByClassName("slideOn");
-				if (n > slides.length) {
-					slideIndex = 1;
-				}   
-				
-				if (n < 1) {
-					slideIndex = slides.length;
-				}
-				
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";  
-				}
-				
-				
-				slides[slideIndex-1].style.display = "block";  
-			}
-			
 			var doc = window.document,
 			  context = doc.querySelector('.scrollerLoop'),
 			  clones = context.querySelectorAll('.is-clone'),
