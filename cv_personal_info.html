@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<title>Personal Info</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="assets/stylesheets/style_white.css">
 	</head>
 	
 	<body>
@@ -33,41 +33,12 @@ Nunc pretium, enim id ultricies volutpat, ipsum turpis lobortis tellus, elementu
 Integer dictum orci lorem, a consectetur mi varius non. Praesent eu metus eros. In porta ac tortor id convallis. Praesent porta sollicitudin vulputate. Integer eu euismod augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Morbi ullamcorper nulla vitae accumsan dignissim. In et ornare sapien, mollis convallis mi. Nullam eu vehicula orci. Sed ullamcorper est non hendrerit dignissim. Vivamus vel dictum libero.</p>
 				
 				<div class="explain"><p>Mofo</p></div>
-				<div class="explain"><p>Mofo</p></div>
-				
+				<div class="explain"><p>Mofo</p></div>				
 			</div>
 		</div>
 		<div id="footer">
 		</div>
 		
-		<script>
-			var slideIndex = 2;
-			showSlides(slideIndex);
-
-			function slideCount(n) {
-			  showSlides(slideIndex += n);
-			}
-
-
-
-			function showSlides(n) {
-				var i;
-				var slides = document.getElementsByClassName("slideOn");
-				if (n > slides.length) {
-					slideIndex = 1;
-				}   
-				
-				if (n < 1) {
-					slideIndex = slides.length;
-				}
-				
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";  
-				}
-				
-				
-				slides[slideIndex-1].style.display = "block";  
-			}
-		</script>
+		<script src="assets/scripts/tools.js"></script>
 	</body>
 </html>

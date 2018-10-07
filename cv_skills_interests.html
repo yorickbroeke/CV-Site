@@ -2,11 +2,10 @@
 <html lang="en">
 	<head>
 		<title>Skills & Interests</title>
-		<link rel="stylesheet" href="style_white.css">
+		<link rel="stylesheet" href="assets/stylesheets/style_white.css">
 	</head>
 	
-	<body>
-		
+	<body>		
 		<div class="bannerborder">
 			<div class="banner">
 				<a href="cv_skills_interests.html" class="bannertext slideOn fade">Skills and Interests</a>
@@ -17,34 +16,20 @@
 				<a class="next" href="cv_about_me.html">&#10095;</a>
 			</div>
 		</div>
-		
-
-		
+				
 		<div class="street">
-			<h1>Skills</h1>
-			
-			
+			<h1>Skills</h1>			
 				<a class="tile" onclick="tileToggle(1)"><img src="./images/Office logo.png" class="fillTile" ></a>
 				<a class="tile" onclick="tileToggle(2)"><img src="./images/Teamwork.png" class="fillTile" ></a>
 				<a class="tile" onclick="tileToggle(3)"><img src="./images/AaBb.png" class="fillTile" ></a>
 				<a class="tile" onclick="tileToggle(4)"><img src="./images/Analytics.png" class="fillTile" ></a>
-				<a class="tile" onclick="tileToggle(5)"><img src="./images/Photoshop.png" class="fillTile" ></a>
-			
-			
-			
+				<a class="tile" onclick="tileToggle(5)"><img src="./images/Photoshop.png" class="fillTile" ></a>						
 				<a class="tile" onclick="tileToggle(6)"><img src="./images/English.png" class="fillTile" ></a>
-				<a class="tile" onclick="tileToggle(7)"><img src="./images/Dutch.png" class="fillTile" ></a>
-			
-		
-			
+				<a class="tile" onclick="tileToggle(7)"><img src="./images/Dutch.png" class="fillTile" ></a>					
 			<h1>Interests</h1>
-			
-			
 				<a class="tile" onclick="tileToggle(8)"><img src="./images/Python.png" class="fillTile"></a>
 				<a class="tile" onclick="tileToggle(9)"><img src="./images/Gaming.png" class="fillTile"></a>
-				<a class="tile" onclick="tileToggle(10)"><img src="./images/Video Editing.png" class="fillTile" ></a>
-			
-			
+				<a class="tile" onclick="tileToggle(10)"><img src="./images/Video Editing.png" class="fillTile" ></a>					
 		</div>
 
 		<div id="descriptions">
@@ -137,50 +122,7 @@
 				</p>
 			</div>
 		</div>
-		
-		
-		
-		
-		<script>
-			
-			function tileToggle(x){
-				var i;
-				var tileCount = document.getElementsByClassName("explain");
-				for (i = 0; i < tileCount.length; i++) {
-					tileCount[i].style.display = "none";  
-				}
-				
-				
-				tileCount[x-1].style.display = "inline-block";  
-			}
-			
-			var slideIndex = 1;
-			showSlides(slideIndex);
 
-			function slideCount(n) {
-			  showSlides(slideIndex += n);
-			}
-
-
-
-			function showSlides(n) {
-				var i;
-				var slides = document.getElementsByClassName("slideOn");
-				if (n > slides.length) {
-					slideIndex = 1;
-				}   
-				
-				if (n < 1) {
-					slideIndex = slides.length;
-				}
-				
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";  
-				}
-				
-				
-				slides[slideIndex-1].style.display = "block";  
-			}
-		</script>
+		<script src="assets/scripts/tools.js"></script>
 	</body>
 </html>
