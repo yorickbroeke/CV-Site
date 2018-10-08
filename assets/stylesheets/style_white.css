@@ -1,8 +1,6 @@
-
-
-body{
+body {
 	height: 100%;
-	background-image: url('./images/colourbar background.jpg');
+	background-image: url('../images/colourbar background.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
@@ -13,21 +11,28 @@ body{
 	font-family: helvetica;
 }
 
-h1{
+h1 {
 	color: #000000;
 	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 	font-size: 200%;
 	padding-left: 1%;
 }
 
-.slideOn{
+/*
+.slideOn {
 	display: none;
 }
+*/
 
-a{opacity: 0.85;}
-a:hover{opacity: 1;}
+a {
+	opacity: 0.85;
+}
 
-.bannerborder{
+a:hover {
+	opacity: 1;
+}
+
+.bannerborder {
 	position: absolute;
 	top: 0%;
 	left: 0%;
@@ -35,23 +40,19 @@ a:hover{opacity: 1;}
 	width: 100%;
 	height: 16.5%;
 	background: linear-gradient(to top, rgba(255, 255, 255, 0.75) 5%, rgba(255, 255, 255, 0.5) 40%, rgba(255, 255, 255, 0.25) 100%);
-	border-bottom: 5px solid white;
+	/* border-bottom: 5px solid white; */
 	margin: 0px;
-	padding: 0px;
-	
+	padding: 0px;	
 }
 
-.banner{
+.banner {
 	position: relative;
 	width: 50%;
 	height: 100%;
 	left: 25%;
-
-	
-	
 }
 
-.prev, .next{
+.prev, .next {
 	cursor: pointer;
 	text-decoration: none;
 	position: absolute;
@@ -70,20 +71,20 @@ a:hover{opacity: 1;}
   border-radius: 3px 0 0 3px;
 }
 
-.next:hover, .prev:hover{
+.next:hover, .prev:hover {
 	top: 20%;
 	font-size: 7vh;
 	opacity: 1;
 } 
 
-.fade{
+.fade {
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 1s;
 	animation-name: fade;
 	animation-duration: 1s;
 }
 
-.bannertext{
+.bannertext {
 	font-size: 250%;
 	text-decoration: none;
 	position: absolute;
@@ -92,10 +93,10 @@ a:hover{opacity: 1;}
 	text-align: center;
 	color: #000000;
 	font-weight: bold;
-	/*text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;*/
+	/* text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white; */
 }
 
-.tile{
+.tile {
 	cursor: pointer;
 	position: relative;
 	display: inline-block;
@@ -110,30 +111,29 @@ a:hover{opacity: 1;}
 	border-color: #ffffff;
 }
 
-.fillTile{
+.fillTile {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
     overflow: hidden;
 	opacity: 0.95;
 }
-.fillTile:hover{
-	opacity: 1;
-	
+
+.fillTile:hover {
+	opacity: 1;	
 }
 
-.scrollerLoop{
+.scrollerLoop {
 	position: absolute;
 	top: 18.5%;
 	left: 1%;
 	height: 81%;
 	width: 49%;
 	overflow: auto;
-	-webkit-overflow-scrolling: touch;
-	
+	-webkit-overflow-scrolling: touch;	
 }
 
-.scrollerBox{
+.scrollerBox {
 	width: 95%;
 	height: 25%;
 	position: relative;
@@ -147,9 +147,11 @@ a:hover{opacity: 1;}
 	margin-bottom: 1%;
 }
 
-.scrollerBox:hover{ opacity: 1;}
+.scrollerBox:hover {
+	opacity: 1;
+}
 
-.explain{
+.explain {
 	position: absolute;
 	top: 17.5%;
 	left: 51%;
@@ -165,7 +167,7 @@ a:hover{opacity: 1;}
 	z-index: 2;
 }
 
-.explainImage{
+.explainImage {
 	position: relative;
 	opacity: 2;
 	height: 65%;
@@ -176,8 +178,7 @@ a:hover{opacity: 1;}
 	object-fit: cover;
     overflow: hidden;
 }
-.explainHeader{
-	
+.explainHeader {	
 	padding: 1%;
 	margin-left: 1.5%;
 	margin-right: 1%;
@@ -187,7 +188,7 @@ a:hover{opacity: 1;}
 	color: #000000;
 }
 
-.explainText{
+.explainText {
 	height: 10%;
 	padding: 2%;
 	margin-left: 1%;
@@ -196,13 +197,17 @@ a:hover{opacity: 1;}
 	font-size: 2vh;
 	font-weight: bold;
 	color: #000000;
-	
 }
- ::-webkit-scrollbar {display:none;}
 
-.row{height: 20%;}
+::-webkit-scrollbar {
+	display:none;
+}
 
-.street{
+.row {
+	height: 20%;
+}
+
+.street {
 	position: absolute;
 	top: 17.5%;
 	width: 48%;	
@@ -213,26 +218,26 @@ a:hover{opacity: 1;}
 	border-radius: 2.5%;
 }
 
-@-webkit-keyframes fade{
-	from{
+@-webkit-keyframes fade {
+	from {
 		opacity: 0.5;
 	}
-	to{
+	to {
 		opacity: 1;
 	}
 }
 
-@keyframes fade{
-	from{
+@keyframes fade {
+	from {
 		opacity: 0.5;
 	}
-	to{
+	to {
 		opacity: 1;
 	}
 }
 
-@media (max-aspect-ratio: 1/1){
-	.street{
+@media (max-aspect-ratio: 1/1) {
+	.street {
 		width: 98%;
 		height: 56%;
 		background-color: #ffffff;
@@ -240,7 +245,7 @@ a:hover{opacity: 1;}
 		border-radius: 2.5%;
 	}
 	
-	.explain{
+	.explain {
 		position: absolute;
 		display: none;
 		top: 75%;
@@ -252,15 +257,15 @@ a:hover{opacity: 1;}
 		z-index: 2;	
 	}
 	
-	.explainImage{
+	.explainImage {
 		height: 50%;
 	}
-	.explainText{
+	.explainText {
 		font-size: 18px;
 		height: 16.5%;
 	}
 	
-	.scrollerLoop{
+	.scrollerLoop {
 		position: absolute;
 		top: 18.5%;
 		height: 56%;
@@ -271,7 +276,7 @@ a:hover{opacity: 1;}
 		-webkit-overflow-scrolling: touch;
 	}
 	
-	.scrollerBox{
+	.scrollerBox {
 		width: 95%;
 		height: 40%;
 		font-size: 100%;

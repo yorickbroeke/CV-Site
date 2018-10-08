@@ -1,3 +1,25 @@
+function slideCount(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    var slides = document.getElementsByClassName("slideOn");
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+        
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    
+    var i;
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex-1].style.display = "block";
+}
+
 function tileToggle(x) {
     var i;
     var tileCount = document.getElementsByClassName("explain");
@@ -6,39 +28,12 @@ function tileToggle(x) {
     }								
     tileCount[x-1].style.display = "inline-block";  
 }
-			
-function itemToggle(x){
+
+function itemToggle(x) {
     var i;
     var itemCount = document.getElementsByClassName("explain");
     for (i = 0; i < itemCount.length; i++) {
         itemCount[i].style.display = "none";  
-    }
-    
-    
-    itemCount[x-1].style.display = "inline-block";  
-}
-
-var slideIndex = 2;
-showSlides(slideIndex);
-
-function slideCount(n) {
-  showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("slideOn");
-    if (n > slides.length) {
-        slideIndex = 1;
-    }   
-    
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-    
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }				
-    
-    slides[slideIndex-1].style.display = "block";  
+    }    
+    itemCount[x-1].style.display = "inline-block";
 }
