@@ -125,7 +125,7 @@ a:hover {
 
 .scrollerLoop {
 	position: absolute;
-	top: 18.5%;
+	top: 17.5%;
 	left: 1%;
 	height: 81%;
 	width: 49%;
@@ -153,8 +153,6 @@ a:hover {
 
 .explain {
 	position: absolute;
-	top: 17.5%;
-	left: 51%;
 	display: none;
 	top: 17.5%;
 	left: 51%;
